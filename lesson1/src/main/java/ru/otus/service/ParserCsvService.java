@@ -6,5 +6,5 @@ import java.util.ArrayList;
 
 public interface ParserCsvService {
 
-    ArrayList<Question> getQuestionList(String filePath);
+    ArrayList<Question> getQuestionList();
 }

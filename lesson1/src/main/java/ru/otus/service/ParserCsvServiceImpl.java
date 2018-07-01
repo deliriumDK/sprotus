@@ -7,13 +7,15 @@ import java.util.ArrayList;
 
 public class ParserCsvServiceImpl implements ParserCsvService {
 
-    private IParserCsvDao dao;
+    private final IParserCsvDao dao;
+    private final String filePath;
 
-    public ParserCsvServiceImpl(IParserCsvDao dao) {
+    public ParserCsvServiceImpl(IParserCsvDao dao, String filePath) {
+        this.filePath = filePath;
         this.dao = dao;
     }
 
-    public ArrayList<Question> getQuestionList(String filePath) {
+    public ArrayList<Question> getQuestionList() {
         return dao.getQuestionList(filePath);
     }
 }
