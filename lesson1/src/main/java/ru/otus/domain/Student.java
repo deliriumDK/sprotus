@@ -6,14 +6,7 @@ public class Student {
     private String name;
     private Integer mark;
 
-    public Student() {
-    }
-
-    public Student(Integer age, String name, Integer mark) {
-        this.age = age;
-        this.name = name;
-        this.mark = mark;
-    }
+    public Student() { }
 
     public Integer getAge() {
         return age;
@@ -37,14 +30,5 @@ public class Student {
 
     public void setMark(Integer mark) {
         this.mark = mark;
-    }
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "age=" + age +
-                ", name='" + name + '\'' +
-                ", mark=" + mark +
-                '}';
     }
 }
